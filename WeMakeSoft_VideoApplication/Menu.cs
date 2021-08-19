@@ -1,4 +1,5 @@
 using System;
+using WeMakeSoft_extentionVideo_Models;
 
 namespace WeMakeSoft_VideoApplication
 {
@@ -15,6 +16,7 @@ namespace WeMakeSoft_VideoApplication
         {
            ShowMainMenu();
            int choice = 0;
+           var Video = new Video();
            while (GetMainMenuSelection() != 0 )
            {
                if (choice == -1)
@@ -22,6 +24,16 @@ namespace WeMakeSoft_VideoApplication
                    
                }
            }
+        }
+
+        private void SearchVideo()
+        {
+            Console.WriteLine("What to search for 1 - Title,  2 - Id,  0 - Go Back");
+            int choice;
+            while (expression)
+            {
+                
+            }
         }
 
         private int GetMainMenuSelection()
